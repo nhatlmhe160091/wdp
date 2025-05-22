@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "6720f6a9c5f24d9c38fc4e0f"
+  },
+  "url": "https://firebasestorage.googleapis.com/v0/b/reservation-58141.appspot.com/o/images%2Fitachi2.png?alt=media&token=ab53f1ad-1ff5-4ece-996b-5ed8feafc568",
+  "altText": "Example image",
+  "entityId": {
+    "$oid": "6703faeab533b620f36b85d7"
+  },
+  "entityType": "DISH",
+  "createdAt": {
+    "$date": "2024-10-29T14:52:25.058Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T14:52:25.058Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6720f6d5c5f24d9c38fc4e11"
+  },
+  "url": "https://firebasestorage.googleapis.com/v0/b/reservation-58141.appspot.com/o/images%2Fphoga.jpg?alt=media&token=7cc31be3-77b1-4bdf-90a5-694c760fd368",
+  "altText": "Pho Ga",
+  "entityId": {
+    "$oid": "6703faeab533b620f36b85d7"
+  },
+  "entityType": "DISH",
+  "createdAt": {
+    "$date": "2024-10-29T14:53:09.508Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T14:53:09.508Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6721290cc5f24d9c38fc4f1c"
+  },
+  "url": "https://firebasestorage.googleapis.com/v0/b/reservation-58141.appspot.com/o/images%2Fphoga.jpg?alt=media&token=7cc31be3-77b1-4bdf-90a5-694c760fd368",
+  "altText": "Pho Ga",
+  "entityId": {
+    "$oid": "670a473d8201ce4250df281e"
+  },
+  "entityType": "DISH",
+  "createdAt": {
+    "$date": "2024-10-29T18:27:24.420Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T18:27:24.420Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6721336ad711619471654eba"
+  },
+  "url": "https://firebasestorage.googleapis.com/v0/b/reservation-58141.appspot.com/o/images%2Fitachi2.png?alt=media&token=acc28fa6-18fb-423a-9a74-49bb06966de6",
+  "altText": "Nguyễn Bảo Ngọc",
+  "entityId": {
+    "$oid": "6721319f18e907a3e52ce7d4"
+  },
+  "entityType": "DISH",
+  "createdAt": {
+    "$date": "2024-10-29T19:11:38.786Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T19:11:38.786Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67213378d711619471654ef2"
+  },
+  "url": "https://firebasestorage.googleapis.com/v0/b/reservation-58141.appspot.com/o/images%2Fitachi.jpg?alt=media&token=a411b9c0-13dc-433d-9a17-86ed1d07b891",
+  "altText": "Nguyễn Bảo Ngọc",
+  "entityId": {
+    "$oid": "6721319f18e907a3e52ce7d4"
+  },
+  "entityType": "DISH",
+  "createdAt": {
+    "$date": "2024-10-29T19:11:52.762Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T19:11:52.762Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6721420859651d3fd368ee38"
+  },
+  "url": "https://firebasestorage.googleapis.com/v0/b/reservation-58141.appspot.com/o/images%2Fitachi.jpg?alt=media&token=0d2c671a-3893-4987-970d-fac868a6c2c9",
+  "altText": "Nguyễn Bảo Ngọc",
+  "entityId": {
+    "$oid": "6721319f18e907a3e52ce7d4"
+  },
+  "entityType": "DISH",
+  "createdAt": {
+    "$date": "2024-10-29T20:14:00.451Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T20:14:00.451Z"
+  },
+  "__v": 0
+}]

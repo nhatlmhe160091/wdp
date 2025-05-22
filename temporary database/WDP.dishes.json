@@ -1,0 +1,1082 @@
+[{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85dc"
+  },
+  "name": "Sushi",
+  "price": 70000,
+  "category": "MAIN_COURSE",
+  "description": "Sushi là món ăn Nhật Bản nổi tiếng, được làm từ cơm trộn giấm và các loại hải sản tươi sống, rau củ hoặc trứng. Món ăn không chỉ hấp dẫn về hình thức mà còn mang lại hương vị tươi ngon, độc đáo, phù hợp cho cả những buổi tiệc hay bữa ăn hàng ngày.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85da"
+  },
+  "name": "Bánh Mì",
+  "price": 20000,
+  "category": "SALAD",
+  "description": "Bánh mì là món ăn đường phố nổi tiếng, với vỏ bánh giòn rụm và nhân phong phú từ thịt nguội, pate, rau sống và nước sốt đặc trưng. Bánh mì có thể được biến tấu với nhiều loại nhân khác nhau, là lựa chọn lý tưởng cho bữa ăn nhanh, ngon miệng và bổ dưỡng.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85d7"
+  },
+  "name": "Phở Bò",
+  "price": 50000,
+  "category": "MAIN_COURSE",
+  "description": "Phở bò là món ăn nổi tiếng của Việt Nam, với bánh phở mềm mại kết hợp cùng nước dùng thơm ngon, đậm đà từ xương bò hầm và gia vị truyền thống. Món ăn thường được phục vụ kèm với thịt bò tái hoặc chín, rau thơm và chanh tươi, mang lại hương vị tuyệt vời cho bữa sáng hay bữa trưa.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-10-29T17:00:13.565Z"
+  },
+  "__v": 1,
+  "images": []
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85de"
+  },
+  "name": "Mì Ý",
+  "price": 65000,
+  "category": "MAIN_COURSE",
+  "description": "Mì Ý là món pasta nổi tiếng, được chế biến từ bột mì, thường được ăn kèm với các loại sốt như sốt cà chua, sốt kem hoặc sốt pesto. Món ăn mang đến sự phong phú về hương vị và là lựa chọn hoàn hảo cho những ai yêu thích ẩm thực phương Tây.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85e0"
+  },
+  "name": "Bánh Flan",
+  "price": 20000,
+  "category": "APPETIZER",
+  "description": "Bánh Flan là món tráng miệng nổi tiếng, với lớp caramel ngọt ngào bên ngoài và lớp kem mềm mịn bên trong. Bánh có hương vị béo ngậy và thơm ngon, thường được dùng lạnh, là lựa chọn hoàn hảo cho những ai yêu thích món ngọt.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85dd"
+  },
+  "name": "Bún Thịt Nướng",
+  "price": 55000,
+  "category": "MAIN_COURSE",
+  "description": "Bún thịt nướng là món ăn đặc trưng của miền Nam Việt Nam, bao gồm bún tươi, thịt nướng thơm lừng, rau sống và nước mắm chua ngọt. Món ăn này không chỉ hấp dẫn bởi hương vị mà còn bởi sự kết hợp hài hòa giữa các thành phần, tạo nên trải nghiệm ẩm thực thú vị.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85df"
+  },
+  "name": "Chè Bà Ba",
+  "price": 15000,
+  "category": "APPETIZER",
+  "description": "Chè là món tráng miệng độc đáo của Việt Nam, được làm từ đậu xanh, bột báng, và nước dừa. Với hương vị ngọt ngào và béo ngậy, chè ba ba thường được phục vụ lạnh, tạo cảm giác tươi mát và thư giãn trong những ngày hè oi ả.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85d8"
+  },
+  "name": "Gà Rán",
+  "price": 60000,
+  "category": "MAIN_COURSE",
+  "description": "Gà rán là món ăn hấp dẫn với lớp vỏ ngoài giòn tan và thịt gà bên trong mềm mọng. Được tẩm ướp gia vị thơm ngon và chiên vàng đều, món ăn này thường được dùng kèm với sốt chấm đặc biệt, mang đến trải nghiệm ẩm thực tuyệt vời cho những tín đồ yêu thích đồ ăn nhanh.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85d9"
+  },
+  "name": "Nem Rán",
+  "price": 30000,
+  "category": "DESSERT",
+  "description": "Nem rán, hay còn gọi là chả giò, là món ăn truyền thống của Việt Nam, được làm từ thịt, tôm và rau củ, cuốn trong lớp bánh tráng mỏng và chiên giòn. Khi thưởng thức, nem rán thường được chấm với nước mắm chua ngọt và ăn kèm với rau sống, tạo nên sự hòa quyện tuyệt vời giữa các hương vị.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6703faeab533b620f36b85db"
+  },
+  "name": "Trà Sữa",
+  "price": 25000,
+  "category": "BEVERAGE",
+  "description": "Trà sữa là đồ uống phổ biến, được pha từ trà, sữa và đường, thường có thêm các loại topping như trân châu, thạch hoặc trái cây. Với hương vị ngọt ngào và béo ngậy, trà sữa là lựa chọn tuyệt vời cho những ai yêu thích đồ uống thơm ngon và mát lạnh.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab8d"
+  },
+  "name": "Bún Chả",
+  "price": 45000,
+  "category": "MAIN_COURSE",
+  "description": "Bún chả là món ăn đặc trưng của Hà Nội, bao gồm bún tươi, chả thịt nướng thơm lừng và nước mắm chua ngọt. Món ăn thường được kèm với rau sống và dưa góp, mang đến sự hài hòa giữa các hương vị và tạo nên trải nghiệm ẩm thực phong phú.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab90"
+  },
+  "name": "Canh Chua Cá Lóc",
+  "price": 60000,
+  "category": "MAIN_COURSE",
+  "description": "Bánh chua cá lóc là món ăn độc đáo từ miền Tây, với bánh tráng cuốn nhân cá lóc, rau sống và nước chấm chua ngọt. Món ăn mang đến hương vị tươi mát và hấp dẫn, thích hợp cho những buổi tụ tập bạn bè.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab8f"
+  },
+  "name": "Bánh Cuốn",
+  "price": 35000,
+  "category": "MAIN_COURSE",
+  "description": "Bánh cuốn là món ăn truyền thống của Việt Nam, được làm từ bột gạo mỏng, cuốn nhân thịt và nấm, thường được ăn kèm với nước mắm chua ngọt và rau sống. Món ăn có vị mềm mại và thơm ngon, là lựa chọn tuyệt vời cho bữa sáng hoặc bữa phụ.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab8e"
+  },
+  "name": "Cơm Tấm",
+  "price": 50000,
+  "category": "MAIN_COURSE",
+  "description": "Cơm tấm là món ăn miền Nam Việt Nam, nổi bật với cơm được nấu từ gạo tấm, thường được ăn kèm với sườn nướng, bì, chả và nước mắm chua ngọt. Món ăn giản dị nhưng đầy hương vị, thích hợp cho bữa trưa hoặc bữa tối.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab94"
+  },
+  "name": "Bánh Xèo",
+  "price": 55000,
+  "category": "MAIN_COURSE",
+  "description": "Bánh bèo là món ăn vặt nổi tiếng của miền Trung, với bánh làm từ bột gạo và được hấp trong chén nhỏ. Món ăn thường được rắc tôm chấy và hành phi, ăn kèm với nước mắm chua ngọt, mang đến hương vị thơm ngon và hấp dẫn.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab95"
+  },
+  "name": "Chè Thái",
+  "price": 20000,
+  "category": "DESSERT",
+  "description": "Chè thái là món tráng miệng đặc sắc với sự kết hợp của nhiều loại trái cây, đậu và thạch, được nấu trong nước cốt dừa. Với hương vị ngọt mát và đa dạng, chè thái là lựa chọn hoàn hảo cho những ngày hè oi ả.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab92"
+  },
+  "name": "Cháo Lòng",
+  "price": 40000,
+  "category": "MAIN_COURSE",
+  "description": "Cháo lòng là món ăn đặc trưng của Việt Nam, được nấu từ gạo và kết hợp với lòng heo, gan, và các loại gia vị. Món ăn có vị ngọt và béo ngậy, thường được ăn kèm với rau sống và chanh, mang lại hương vị độc đáo và ấm lòng.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab93"
+  },
+  "name": "Xôi Xéo",
+  "price": 25000,
+  "category": "SALAD",
+  "description": "Xôi xéo là món ăn sáng truyền thống, được làm từ gạo nếp và đậu xanh, thường được ăn kèm với hành phi và thịt. Với hương vị thơm ngon và dễ ăn, xôi xéo là lựa chọn hoàn hảo cho những ai yêu thích món ăn dân dã.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab96"
+  },
+  "name": "Cà Phê Sữa Đá",
+  "price": 15000,
+  "category": "BEVERAGE",
+  "description": "Cà phê sữa đá là thức uống đặc trưng của Việt Nam, với hương vị đậm đà của cà phê hòa quyện cùng sữa đặc ngọt ngào. Được pha chế và dùng lạnh, cà phê sữa đá không chỉ giúp giải khát mà còn mang lại cảm giác tỉnh táo cho một ngày mới.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6704efa24ffd40c56453ab91"
+  },
+  "name": "Gỏi Cuốn",
+  "price": 30000,
+  "category": "DESSERT",
+  "description": "Gỏi cuốn, hay còn gọi là nem cuốn, là món ăn nhẹ được làm từ bánh tráng cuốn nhân tôm, thịt và rau sống. Món ăn được ăn kèm với nước mắm chua ngọt, tạo nên sự kết hợp hoàn hảo giữa hương vị tươi ngon và dinh dưỡng.",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    },
+    {
+      "$oid": "670e4d046a4f03d624cfd875"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "670a473d8201ce4250df281e"
+  },
+  "name": "Phở Gà",
+  "price": 12000,
+  "category": "MAIN_COURSE",
+  "description": "Phở gà là phiên bản nhẹ nhàng của phở bò, với bánh phở mềm và nước dùng được ninh từ gà, mang đến hương vị thanh nhẹ và thơm ngon. Món ăn thường được phục vụ kèm với thịt gà, hành tây, rau thơm và chanh, tạo nên sự kết hợp hoàn hảo cho một bữa ăn ngon miệng.",
+  "__v": 10,
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    }
+  ],
+  "updatedAt": {
+    "$date": "2024-10-29T19:08:48.510Z"
+  },
+  "images": []
+},
+{
+  "_id": {
+    "$oid": "671b4f906c2050dea701ef1b"
+  },
+  "name": "Salad",
+  "price": 12312,
+  "category": "MAIN_COURSE",
+  "description": "Salad là món ăn nhẹ, thường được làm từ rau sống, trái cây và các loại hạt, được trộn với nước sốt đa dạng. Với hương vị tươi mát và dinh dưỡng, salad là lựa chọn lý tưởng cho những ai muốn duy trì một chế độ ăn lành mạnh.",
+  "foodTag": "SEASONAL",
+  "restaurants": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "671b55086c2050dea701ef3a"
+  },
+  "name": "cc",
+  "price": 22321312,
+  "category": "MAIN_COURSE",
+  "description": "sdfsdfs",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "671e7ae30e47ef50d967f11b"
+  },
+  "name": "gfhdfg",
+  "price": 0,
+  "category": "DESSERT",
+  "description": "ádasdas",
+  "foodTag": "CHEF_SPECIAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    }
+  ],
+  "imageUrl": [
+    ""
+  ],
+  "__v": 2,
+  "updatedAt": {
+    "$date": "2024-10-27T19:11:44.660Z"
+  },
+  "images": []
+},
+{
+  "_id": {
+    "$oid": "671e9926d59be71702df8179"
+  },
+  "name": "test ",
+  "price": 2342,
+  "category": "MAIN_COURSE",
+  "description": "ádasdas",
+  "foodTag": "SEASONAL",
+  "restaurants": [],
+  "images": null,
+  "createdAt": {
+    "$date": "2024-10-27T19:48:54.620Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-27T19:48:54.620Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6721319f18e907a3e52ce7d4"
+  },
+  "name": "Nguyễn Bảo Ngọc",
+  "price": 0,
+  "category": "MAIN_COURSE",
+  "description": "",
+  "foodTag": "SEASONAL",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    }
+  ],
+  "images": [],
+  "createdAt": {
+    "$date": "2024-10-29T19:03:59.479Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-29T20:14:09.981Z"
+  },
+  "__v": 1
+}]

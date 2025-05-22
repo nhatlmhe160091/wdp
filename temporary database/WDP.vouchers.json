@@ -1,0 +1,1294 @@
+[{
+  "_id": {
+    "$oid": "6708be32e4c878b61abc47cb"
+  },
+  "code": "SUMMER2024",
+  "pointsRequired": 100,
+  "discountPercentage": 15,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2024-11-05T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Summer voucher with 15% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c044e4c878b61abc47cf"
+  },
+  "code": "WINTER2024",
+  "pointsRequired": 0,
+  "discountPercentage": 20,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2024-12-01T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Winter voucher with 20% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c04ee4c878b61abc47d3"
+  },
+  "code": "FALLFEST2024",
+  "pointsRequired": 0,
+  "discountPercentage": 10,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2024-11-15T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Fall festival voucher with 10% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c05de4c878b61abc47d7"
+  },
+  "code": "SPRING2025",
+  "pointsRequired": 0,
+  "discountPercentage": 25,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2025-03-10T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Spring 2025 voucher with 25% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c075e4c878b61abc47db"
+  },
+  "code": "NEWYEAR2025",
+  "pointsRequired": 0,
+  "discountPercentage": 30,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2025-01-31T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "New Year 2025 voucher with 30% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c081e4c878b61abc47df"
+  },
+  "code": "BLACKFRIDAY2024",
+  "pointsRequired": 0,
+  "discountPercentage": 50,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2024-11-29T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Black Friday 2024 voucher with 50% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c0bce4c878b61abc47e3"
+  },
+  "code": "SUMMERBLAST2024",
+  "pointsRequired": 120,
+  "discountPercentage": 18,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2024-11-20T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Summer Blast voucher with 18% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c0c4e4c878b61abc47e7"
+  },
+  "code": "HOLIDAYSALE2024",
+  "pointsRequired": 250,
+  "discountPercentage": 22,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2024-12-20T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Holiday Sale 2024 voucher with 22% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c0d0e4c878b61abc47eb"
+  },
+  "code": "EARLYBIRD2025",
+  "pointsRequired": 90,
+  "discountPercentage": 12,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2025-02-01T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Early Bird voucher for 2025 with 12% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c0d7e4c878b61abc47ef"
+  },
+  "code": "VALENTINE2025",
+  "pointsRequired": 180,
+  "discountPercentage": 35,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2025-02-14T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Valentine 2025 voucher with 35% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c0dce4c878b61abc47f3"
+  },
+  "code": "SPRINGSALE2025",
+  "pointsRequired": 110,
+  "discountPercentage": 20,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2025-03-31T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Spring Sale voucher with 20% discount.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708c0e4e4c878b61abc47f7"
+  },
+  "code": "ANNIVERSARY2025",
+  "pointsRequired": 400,
+  "discountPercentage": 40,
+  "validFrom": {
+    "$date": "2024-10-11T00:00:00.000Z"
+  },
+  "validTo": {
+    "$date": "2025-05-01T00:00:00.000Z"
+  },
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    },
+    {
+      "$oid": "6705431d2090430a304e75af"
+    },
+    {
+      "$oid": "670543302090430a304e75b1"
+    },
+    {
+      "$oid": "670543442090430a304e75b3"
+    },
+    {
+      "$oid": "670543522090430a304e75b5"
+    },
+    {
+      "$oid": "670545582090430a304e75b7"
+    },
+    {
+      "$oid": "670545622090430a304e75b9"
+    },
+    {
+      "$oid": "6705456c2090430a304e75bb"
+    },
+    {
+      "$oid": "6705457b2090430a304e75bd"
+    },
+    {
+      "$oid": "670e4a5504845fcf737826e6"
+    },
+    {
+      "$oid": "670e4b466a4f03d624cfd855"
+    }
+  ],
+  "dishes": [
+    {
+      "$oid": "6703faeab533b620f36b85d7"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d8"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85d9"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85da"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85db"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dc"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85dd"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85de"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85df"
+    },
+    {
+      "$oid": "6703faeab533b620f36b85e0"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8d"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8e"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab8f"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab90"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab91"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab92"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab93"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab94"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab95"
+    },
+    {
+      "$oid": "6704efa24ffd40c56453ab96"
+    }
+  ],
+  "description": "Anniversary voucher with 40% discount.",
+  "__v": 2,
+  "discountPercent": 0,
+  "expireAt": {
+    "$date": "2024-10-26T00:00:00.000Z"
+  }
+}]

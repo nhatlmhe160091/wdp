@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "6714dd3065b393acad7cfb77"
+  },
+  "name": "Phạm Anh",
+  "phoneNumber": "0369123027",
+  "email": "tienpv0920@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-20T10:36:32.227Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-20T10:36:32.227Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6714de9865b393acad7cfba4"
+  },
+  "name": "Nguyễn Văn Tèo",
+  "phoneNumber": "039123088",
+  "email": "teo@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-20T10:42:32.029Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-20T10:42:32.029Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6714deae65b393acad7cfbb5"
+  },
+  "name": "Nguyễn Văn Tèo",
+  "phoneNumber": "039123088",
+  "email": "teo@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-20T10:42:54.920Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-20T10:42:54.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6714df7065b393acad7cfbc2"
+  },
+  "name": "Nguyễn Văn Tèo",
+  "phoneNumber": "039123088",
+  "email": "teo@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-20T10:46:08.947Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-20T10:46:08.947Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6714dfdd65b393acad7cfbc7"
+  },
+  "name": "Phạm Văn Wave",
+  "phoneNumber": "039123022",
+  "email": "wave@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-20T10:47:57.203Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-20T10:47:57.203Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6723218d6d1bd861a3072e2c"
+  },
+  "name": "Phạm Anh Hehe",
+  "phoneNumber": "0369123027",
+  "email": "",
+  "createdAt": {
+    "$date": "2024-10-31T06:19:57.767Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-31T06:19:57.767Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67232fc162235a2618f99ecd"
+  },
+  "name": "Phạm Anh",
+  "phoneNumber": "0369123027",
+  "email": "phamtien@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-31T07:20:33.022Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-31T07:20:33.022Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67232fdd62235a2618f99ed0"
+  },
+  "name": "Phạm Anh",
+  "phoneNumber": "0369123027",
+  "email": "phamtien@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-31T07:21:01.116Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-31T07:21:01.116Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67232fe362235a2618f99ed3"
+  },
+  "name": "Phạm Anh",
+  "phoneNumber": "0369123027",
+  "email": "phamtien@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-31T07:21:07.833Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-31T07:21:07.833Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67232fe962235a2618f99ed6"
+  },
+  "name": "Phạm Anh",
+  "phoneNumber": "0369123027",
+  "email": "phamtien@gmail.com",
+  "createdAt": {
+    "$date": "2024-10-31T07:21:13.060Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-31T07:21:13.060Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67247f479258ae2db389084c"
+  },
+  "name": "Phạm Anh",
+  "phoneNumber": "0369123027",
+  "email": "",
+  "createdAt": {
+    "$date": "2024-11-01T07:12:07.222Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-01T07:12:07.222Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67247f579258ae2db389084f"
+  },
+  "name": "Phạm Anh",
+  "phoneNumber": "0369123027",
+  "email": "",
+  "createdAt": {
+    "$date": "2024-11-01T07:12:23.602Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-01T07:12:23.602Z"
+  },
+  "__v": 0
+}]

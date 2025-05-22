@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "66fec0c9e6047d9e02234c69"
+  },
+  "fname": "Admin",
+  "lname": "First",
+  "dob": "10-3-2024",
+  "phoneNumber": "123456789",
+  "gender": "MALE",
+  "firebaseUID": "PgPvNP24rhNWEj8eFRRFFcKddO73",
+  "role": "ADMIN"
+},
+{
+  "_id": {
+    "$oid": "66fec0ebe6047d9e02234c6c"
+  },
+  "fname": "Customer",
+  "lname": "Second",
+  "dob": {
+    "$date": "2024-02-02T17:00:00.000Z"
+  },
+  "phoneNumber": "0369123027",
+  "gender": "MALE",
+  "firebaseUID": "zhvmj9RR83VCr5R32iw3Y5utErj2",
+  "role": "CUSTOMER",
+  "updatedAt": {
+    "$date": "2024-10-31T13:45:47.269Z"
+  },
+  "__v": 1,
+  "restaurants": []
+},
+{
+  "_id": {
+    "$oid": "66fec114e6047d9e02234c6f"
+  },
+  "fname": "Manager",
+  "lname": "First",
+  "dob": "10-3-2024",
+  "phoneNumber": "123456789",
+  "gender": "MALE",
+  "firebaseUID": "Mcym1RKRGvbsJxAodifl3ak17423",
+  "restaurants": [
+    {
+      "$oid": "67012a161f350cf152712f3c"
+    }
+  ],
+  "role": "MANAGER"
+},
+{
+  "_id": {
+    "$oid": "67012bb3ed1d85a33b98f85b"
+  },
+  "fname": "Hiệp",
+  "lname": "Hoàng",
+  "dob": {
+    "$date": "2000-10-04T17:00:00.000Z"
+  },
+  "phoneNumber": "+840379866596",
+  "gender": "MALE",
+  "firebaseUID": "q2gawRtwx2goEAFuWynYzZMiFnI2",
+  "restaurant": null,
+  "role": "CUSTOMER",
+  "createdAt": {
+    "$date": "2024-10-05T12:06:11.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-05T12:06:11.979Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "671591af23bac9a7398f024c"
+  },
+  "fname": "Ngọc",
+  "lname": "Bảo",
+  "dob": {
+    "$date": "2000-10-04T17:00:00.000Z"
+  },
+  "phoneNumber": "+840379866596",
+  "gender": "MALE",
+  "firebaseUID": "HonswFme67eQW3CACCogRb3moS62",
+  "restaurant": null,
+  "role": "CUSTOMER"
+},
+{
+  "_id": {
+    "$oid": "6717a39a5111f84580f5957c"
+  },
+  "fname": "Staff",
+  "lname": "First",
+  "dob": {
+    "$date": "2024-10-21T17:00:00.000Z"
+  },
+  "phoneNumber": "+840369123022",
+  "gender": "MALE",
+  "firebaseUID": "gDejsjSnsXZj5RuB38sbyEe80g72",
+  "restaurant": {
+    "$oid": "67012a161f350cf152712f3c"
+  },
+  "restaurants": [],
+  "role": "STAFF",
+  "createdAt": {
+    "$date": "2024-10-22T13:07:38.009Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-22T13:07:38.009Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6723aa57c5ae49ecfb9aafef"
+  },
+  "fname": "Tiến",
+  "lname": "Phạm",
+  "dob": {
+    "$date": "2024-10-30T17:00:00.000Z"
+  },
+  "phoneNumber": "0369123027",
+  "gender": "MALE",
+  "firebaseUID": "z88pIgvFr5RuhJpBdps78BOMwLw1",
+  "restaurant": null,
+  "restaurants": [],
+  "role": "CUSTOMER",
+  "createdAt": {
+    "$date": "2024-10-31T16:03:35.473Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-31T16:03:35.473Z"
+  },
+  "__v": 0
+}]

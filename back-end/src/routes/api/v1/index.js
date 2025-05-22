@@ -1,0 +1,24 @@
+const express = require('express');
+const router = express.Router();
+const bookingRouter = require('./booking.router');
+const dishRouter = require('./dish.router');
+const guestRouter = require('./guest.router');
+const messageRouter = require('./message.router');
+const restaurantRouter = require('./restaurant.router');
+const tableRouter = require('./table.router');
+const userRouter = require('./user.router');
+// const voucherRouter = require('./table.router');
+// const reservationRouter = require('./reservation.router');
+const voucherRouter = require('./voucher.router');
+const imageRouter = require('./image.router');
+
+router.use('/booking', bookingRouter);
+router.use('/dish', dishRouter);
+router.use('/guest', guestRouter);
+router.use('/message', messageRouter);
+router.use('/restaurant', restaurantRouter);
+router.use('/table', tableRouter);
+router.use('/user', userRouter);
+router.use('/voucher', voucherRouter);
+router.use('/image', imageRouter);
+module.exports = router;

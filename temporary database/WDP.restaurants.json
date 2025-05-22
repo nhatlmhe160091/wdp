@@ -1,0 +1,567 @@
+[{
+  "_id": {
+    "$oid": "67012a161f350cf152712f3c"
+  },
+  "name": "Nhà hàng Ratatouille Times City",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "Tầng B1-22, 458 Minh Khai, Hai Bà Trưng, Hà Nội",
+  "description": "Tọa lạc tại trung tâm thương mại Times City, Ratatouille Times City là điểm đến lý tưởng cho những ai yêu thích ẩm thực Hàn Quốc. Nhà hàng nổi bật với món lẩu Tokbokki hấp dẫn, được chế biến từ nguyên liệu tươi ngon và nước dùng đậm đà, mang đến trải nghiệm ẩm thực độc đáo giữa không gian sang trọng và hiện đại.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+},
+{
+  "_id": {
+    "$oid": "6705431d2090430a304e75af"
+  },
+  "name": "Nhà hàng Ratatouille Mac Plaza",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "Lầu 4 Mac Plaza, 10 Trần Phú, Mô Lão, Hà Nội",
+  "description": "Nằm trên lầu 4 của Mac Plaza, Ratatouille Mac Plaza mang đến cho thực khách không gian thoải mái và ấm cúng. Nhà hàng nổi tiếng với món lẩu Tokbokki, kết hợp với nhiều nguyên liệu phong phú, tạo nên hương vị đặc trưng. Đây là nơi lý tưởng cho các buổi tụ tập bạn bè hoặc những bữa ăn gia đình thú vị.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+},
+{
+  "_id": {
+    "$oid": "670543302090430a304e75b1"
+  },
+  "name": "Nhà hàng Ratatouille Bắc Từ Liêm",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "Tầng hầm B1- Gian hàng 28-31, Vincom Bắc Từ Liêm, 234 Phạm Văn Đồng, Cổ Nhuế, Bắc Từ Liêm, Hà Nội",
+  "description": "Tại Vincom Bắc Từ Liêm, Ratatouille Bắc Từ Liêm nổi bật với không gian rộng rãi và thân thiện. Món lẩu Tokbokki tại đây được chế biến tỉ mỉ với nguyên liệu tươi ngon, mang đến trải nghiệm ẩm thực đáng nhớ. Nhà hàng cũng phục vụ nhiều món ăn Hàn Quốc khác, phù hợp cho mọi lứa tuổi và sở thích.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+},
+{
+  "_id": {
+    "$oid": "670543442090430a304e75b3"
+  },
+  "name": "Nhà hàng Ratatouille Bình Thạnh",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "39-141 Nguyễn Gia Trí, P.25, Bình Thạnh, TP. Hồ Chí Minh",
+  "description": "Ratatouille Bình Thạnh là điểm đến quen thuộc cho những tín đồ ẩm thực Hàn Quốc tại TP. Hồ Chí Minh. Với món lẩu Tokbokki thơm ngon và đa dạng các món ăn kèm, nhà hàng tạo ra không gian lý tưởng để thưởng thức bữa ăn cùng bạn bè và gia đình trong một bầu không khí thân mật và ấm cúng.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+},
+{
+  "_id": {
+    "$oid": "670543522090430a304e75b5"
+  },
+  "name": "Nhà hàng Ratatouille Tân Phú",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "Tầng 3 AEON MALL Tân Phú Celadon, 30 Bờ Bao Tân Thắng, Sơn Ký, Tân Phú, Hồ Chí Minh",
+  "description": "Nằm trong AEON MALL Tân Phú, Ratatouille Tân Phú mang đến trải nghiệm ẩm thực Hàn Quốc tuyệt vời cho mọi thực khách. Nhà hàng nổi tiếng với món lẩu Tokbokki phong phú, được chế biến từ những nguyên liệu tươi ngon. Không gian hiện đại và thoáng đãng là nơi lý tưởng để thưởng thức bữa ăn và tận hưởng những khoảnh khắc vui vẻ bên người thân.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+},
+{
+  "_id": {
+    "$oid": "670545582090430a304e75b7"
+  },
+  "name": "Nhà hàng Ratatouille Hồ Tây",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "272 Phú Thượng, Tây Hồ, Hà Nội",
+  "description": "Ratatouille Hồ Tây mang đến không gian thư giãn, thích hợp cho những buổi gặp gỡ bạn bè hoặc tổ chức sự kiện. Món lẩu Tokbokki của nhà hàng được chế biến từ những nguyên liệu tươi ngon nhất, kết hợp với gia vị truyền thống, tạo nên hương vị đậm đà và hấp dẫn. Nhà hàng cũng có nhiều món ăn Hàn Quốc khác, phù hợp với khẩu vị của nhiều đối tượng, từ người lớn đến trẻ nhỏ.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+},
+{
+  "_id": {
+    "$oid": "670545622090430a304e75b9"
+  },
+  "name": "Nhà hàng Ratatouille Hàng Chiếu",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "22 Hàng Chiếu, Hoàn Kiếm, Hà Nội",
+  "description": "Nằm trong khu phố cổ Hà Nội, Ratatouille Hàng Chiếu mang đến không gian ấm cúng và gần gũi. Đây là nơi lý tưởng để thưởng thức món lẩu Tokbokki ngon tuyệt, được nấu ngay tại bàn, tạo ra không khí thân mật cho những bữa tiệc nhỏ. Bên cạnh đó, nhà hàng còn có thực đơn phong phú với nhiều món Hàn Quốc khác, từ kimchi đến các món nướng, hứa hẹn sẽ làm hài lòng những thực khách khó tính nhất.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+},
+{
+  "_id": {
+    "$oid": "6705456c2090430a304e75bb"
+  },
+  "name": "Nhà hàng Ratatouille Đà Nẵng",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "Tầng 1 lô 101 -Indochina Riverside Towers, 74 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng",
+  "description": "Ratatouille Đà Nẵng nổi bật với không gian rộng rãi và thoáng đãng, phù hợp cho các buổi tiệc lớn và bữa ăn gia đình. Món lẩu Tokbokki tại đây không chỉ ngon mà còn phong phú với nhiều lựa chọn kèm theo, giúp thực khách tự do sáng tạo món ăn theo sở thích của mình. Ngoài ra, nhà hàng cũng chú trọng đến dịch vụ tận tâm, đảm bảo mỗi khách hàng đều có trải nghiệm đáng nhớ.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+},
+{
+  "_id": {
+    "$oid": "6705457b2090430a304e75bd"
+  },
+  "name": "Nhà hàng Ratatouille Hòa Bình",
+  "location": {
+    "coordinates": [
+      21.0285,
+      105.8542
+    ]
+  },
+  "phoneNumber": "+8436912303",
+  "address": "Lầu 4 Vincom Plaza Hòa Bình, Cù Chính Lan, Đồng Tiến, TP. Hòa Bình",
+  "description": "Ratatouille Hòa Bình nổi bật với món lẩu Tokbokki hấp dẫn và không gian thân thiện, phù hợp cho các buổi gặp gỡ bạn bè hoặc bữa tiệc gia đình. Nhà hàng phục vụ nhiều món ăn Hàn Quốc phong phú, với nguyên liệu tươi ngon và cách chế biến độc đáo, đảm bảo mang lại trải nghiệm ẩm thực đáng nhớ cho mọi thực khách.",
+  "activeTime": {
+    "monday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "tuesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "wednesday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "thursday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "friday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "saturday": {
+      "open": "8h",
+      "close": "23h"
+    },
+    "sunday": {
+      "open": "8h",
+      "close": "23h"
+    }
+  },
+  "services": {
+    "projector": true,
+    "childSeat": true,
+    "privateRoom": true,
+    "karaoke": false,
+    "eventDecoration": false,
+    "childrenArea": false,
+    "cashPayment": true,
+    "visaCard": true,
+    "smokingArea": true,
+    "carParking": true,
+    "motorbikeParking": true,
+    "mc": false,
+    "outDoorTable": false,
+    "balconyTable": true
+  },
+  "totalFloor": 2,
+  "totalTable": 50
+}]
