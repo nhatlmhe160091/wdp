@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
-  Box, Card, CardContent, Typography, Grid, Select, MenuItem, InputLabel, FormControl
+  Box, Card, CardContent, Typography, Grid, Select, MenuItem, InputLabel, FormControl, Pagination
 } from "@mui/material";
 import { styled } from "@mui/system";
 import { FaUserFriends, FaLocationArrow } from "react-icons/fa";
@@ -17,7 +17,7 @@ const StyledCard = styled(Card)(({ isBooked }) => ({
   minHeight: "200px",
   cursor: "pointer",
   transition: "transform 0.2s",
-  backgroundColor: isBooked ? "#ffebee" : "#e8f5e9", 
+  backgroundColor: isBooked ? "#ffebee" : "#e8f5e9",
   "&:hover": {
     transform: "scale(1.02)",
   },
@@ -52,7 +52,16 @@ const AssignTableTime = () => {
   const [restaurant, setRestaurant] = useState(null);
   const [restaurants, setRestaurants] = useState([]);
   const [openBookingDialog, setOpenBookingDialog] = useState(false);
-  const [selectedTable, setSelectedTable] = useState(null); // Bàn được chọn
+  const [selectedTable, setSelectedTable] = useState(null);
+
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const tablesPerPage = 9;
+  const pageCount = Math.ceil(combinedTables.length / tablesPerPage);
+  const paginatedTables = combinedTables.slice(
+    (currentPage - 1) * tablesPerPage,
+    currentPage * tablesPerPage
+  );
 
   const formattedBookingTime = `${bookingTime.format("YYYY-MM-DDTHH:mm:ss")}Z`;
 
@@ -90,6 +99,7 @@ const AssignTableTime = () => {
         ];
 
         setCombinedTables(combined);
+        setCurrentPage(1); // Reset page when filter changes
       } catch (error) {
         console.error(error);
       }
@@ -99,10 +109,14 @@ const AssignTableTime = () => {
   }, [restaurant, bookingTime, timeRange]);
 
   const handleTableClick = (table) => {
-    if (!table.isBooked) { 
+    if (!table.isBooked) {
       setSelectedTable(table);
       setOpenBookingDialog(true);
     }
+  };
+
+  const handlePageChange = (event, value) => {
+    setCurrentPage(value);
   };
 
   return (
@@ -182,11 +196,11 @@ const AssignTableTime = () => {
       </Box>
 
       <Grid container spacing={3}>
-        {combinedTables.map((table) => (
+        {paginatedTables.map((table) => (
           <Grid item xs={12} sm={6} md={4} key={table.id}>
             <StyledCard
               isBooked={table.isBooked}
-              onClick={() => handleTableClick(table)} // Gọi hàm xử lý khi click
+              onClick={() => handleTableClick(table)}
               aria-label={`Table ${table.number} - ${table.isBooked ? "Booked" : "Available"}`}
             >
               <CardContent>
@@ -212,19 +226,32 @@ const AssignTableTime = () => {
         ))}
       </Grid>
 
+      {/* Pagination */}
+      {pageCount > 1 && (
+        <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+          <Pagination
+            count={pageCount}
+            page={currentPage}
+            onChange={handlePageChange}
+            color="primary"
+            shape="rounded"
+          />
+        </Box>
+      )}
+
       {/* BookingDialog */}
       {selectedTable && (
         <BookingDialog
           open={openBookingDialog}
           setOpen={setOpenBookingDialog}
           adultsCount={0}
-          setAdultsCount={() => {}} 
+          setAdultsCount={() => { }}
           childrenCount={0}
-          setChildrenCount={() => {}}
+          setChildrenCount={() => { }}
           bookingTime={bookingTime}
           setBookingTime={setBookingTime}
           restaurant={restaurant}
-          table={selectedTable} 
+          table={selectedTable}
         />
       )}
     </Box>

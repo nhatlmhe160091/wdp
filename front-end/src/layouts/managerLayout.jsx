@@ -4,7 +4,7 @@ import {
   Box, Container, CssBaseline, Toolbar, Drawer, List, ListItem,
   ListItemButton, ListItemIcon, ListItemText, Divider
 } from '@mui/material';
-import { TableChart, Book, List as ListIcon, People, RestaurantMenu,TableRestaurant } from '@mui/icons-material';
+import { TableChart, Book, List as ListIcon, People, RestaurantMenu, TableRestaurant } from '@mui/icons-material';
 import ManagerHeader from '../components/headers/ManagerHeader';
 
 const drawerWidth = 240;
@@ -14,7 +14,7 @@ const ManagerLayout = () => {
     <Box sx={{ display: 'flex', minHeight: '100vh' }}>
       <CssBaseline />
 
-      <ManagerHeader></ManagerHeader>
+      <ManagerHeader />
 
       {/* Sidebar Drawer */}
       <Drawer
@@ -27,8 +27,14 @@ const ManagerLayout = () => {
       >
         <Toolbar />
         <Box sx={{ overflow: 'auto' }}>
-          <List> 
-          <ListItem disablePadding>
+          <List>
+            <ListItem disablePadding>
+              <ListItemButton component={Link} to="/manager/dashboard">
+                <ListItemIcon><ListIcon /></ListItemIcon>
+                <ListItemText primary="Dashboard" />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
               <ListItemButton component={Link} to="manager/booking-table">
                 <ListItemIcon><RestaurantMenu /></ListItemIcon>
                 <ListItemText primary="Đặt bàn ăn" />
@@ -71,7 +77,6 @@ const ManagerLayout = () => {
           <Outlet />
         </Container>
       </Box>
-
     </Box>
   );
 };

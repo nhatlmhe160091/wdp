@@ -77,7 +77,8 @@ const RestaurantItem = ({ item, onEdit, onDelete }) => {
       <Modal
         isOpen={showModal}
         onRequestClose={() => setShowModal(false)}
-        contentLabel="Restaurant Details"
+        contentLabel="Chỉnh sửa thông tin cửa hàng"
+        ariaHideApp={false}
         style={{
           content: {
             width: "800px",

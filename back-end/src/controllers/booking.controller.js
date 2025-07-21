@@ -263,6 +263,18 @@ class BookingController {
             next(error);
         }
     };
+
+    getDashboardStats = async (req, res, next) => {
+        try {
+            const stats = await BookingService.getDashboardStats();
+            res.status(200).json({
+                message: 'Dashboard statistics fetched successfully',
+                data: stats,
+            });
+        } catch (error) {
+            next(error);
+        }
+    }
 }
 
 module.exports = new BookingController;

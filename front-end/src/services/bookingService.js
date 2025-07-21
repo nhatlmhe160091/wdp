@@ -126,6 +126,9 @@ const BookingService = {
         return handleApiCall(() =>
             api.patch(`/booking/update-reservation-status/${bookingId}`, { status })
         );
+    },
+    getDashboardStats: async () => {
+        return handleApiCall(() => api.get("/booking/dashboard"));
     }
 }
 

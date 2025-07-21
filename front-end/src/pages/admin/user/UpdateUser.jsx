@@ -13,7 +13,7 @@ const UpdateUser = ({ user, onClose }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         await UserService.updateAccountInfo(user._id, fname, lname, dob, phoneNumber, gender, role);
-        alert('User information updated!');
+        alert('Cập nhật thông tin người dùng thành công!');
         onClose(); // Close dialog after updating
     };
 

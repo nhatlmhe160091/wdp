@@ -103,30 +103,33 @@ const DishManager = () => {
           id: selectedDish._id,
           updatedDish: formData,
         }).unwrap();
-        toast.success("Dish updated successfully!");
+        toast.success("Chỉnh sửa món ăn thành công!");
       } else {
         await addDish(formData).unwrap();
-        toast.success("Dish added successfully!");
+        toast.success("Thêm món ăn mới thành công!");
       }
 
       if (formData.image) {
         await uploadImage(formData.image).unwrap();
-        toast.success("Image uploaded successfully!");
+        toast.success("Hình ảnh đã được tải lên thành công!");
       }
 
       setShowForm(false);
     } catch (error) {
-      toast.error("Error submitting form. Please try again.");
+      toast.error(
+        error?.data?.message || "Lỗi khi lưu món ăn. Vui lòng thử lại."
+      );
+      console.error("Error saving dish:", error);
     }
   };
 
   const handleDelete = async (id) => {
-    if (window.confirm("Are you sure you want to delete this dish?")) {
+    if (window.confirm("Bạn có chắc chắn muốn xóa món ăn này?")) {
       try {
         await deleteDish(id).unwrap();
-        toast.success("Dish deleted successfully!");
+        toast.success("Món ăn đã được xóa thành công!");
       } catch (error) {
-        toast.error("Failed to delete the dish. Please try again.");
+        toast.error("Lỗi khi xóa món ăn. Vui lòng thử lại.");
       }
     }
   };
@@ -260,6 +263,7 @@ const DishManager = () => {
       </Box>
       {/* Dish Form Modal */}
       <Modal
+        ariaHideApp={false}
         isOpen={showForm}
         onRequestClose={() => setShowForm(false)}
         contentLabel="Restaurant Form"

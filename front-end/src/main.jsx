@@ -21,6 +21,7 @@ import "react-toastify/dist/ReactToastify.css";
 import RestaurantManager from "./pages/admin/restaurant/RestaurantManager";
 import DishManager from "./pages/admin/dish/DishManager";
 import Support from './pages/support/Support';
+import RestaurantBookingDashboard from './pages/manager/booking/RestaurantBookingDashboard';
 /**
  * Roles include GUEST, CUSTOMER, STAFF, ADMIN, MANAGER
  */
@@ -135,6 +136,14 @@ const router = createBrowserRouter([
             element: (
               <ProtectedRoute>
                 <UserList />
+              </ProtectedRoute>
+            ),
+          },
+             {
+            path: "dashboard",
+            element: (
+              <ProtectedRoute>
+                <RestaurantBookingDashboard/>
               </ProtectedRoute>
             ),
           }

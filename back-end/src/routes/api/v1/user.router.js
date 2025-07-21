@@ -6,6 +6,7 @@ const { AuthMiddleware } = require('../../../middlewares/index');
 
 router.post('/reset-password', AuthMiddleware.checkRoles(['GUEST', 'CUSTOMER', 'STAFF', 'MANAGER', 'ADMIN']), UserController.resetPassword);
 router.post('/send-email-verification', AuthMiddleware.checkRoles(['GUEST', 'CUSTOMER', 'STAFF', 'MANAGER', 'ADMIN']), UserController.sendEmailVerification);
+router.post('/get-email-by-phone', UserController.getEmailByPhoneNumber);
 router.get('/verify-email', AuthMiddleware.checkRoles(['GUEST', 'CUSTOMER', 'STAFF', 'MANAGER', 'ADMIN']), UserController.verifyEmail);
 router.get('/get-current-user', AuthMiddleware.checkRoles(['CUSTOMER', 'STAFF', 'MANAGER', 'ADMIN']), UserController.getCurrentUser);
 router.post('/register-customer-account', AuthMiddleware.checkRoles(['GUEST']), UserController.registerCustomerAccount);
@@ -19,4 +20,6 @@ router.get('/paginated', UserController.getPaginatedUsers);
 router.post('/register-and-verify-account', UserController.registerAndVerifyAccount);
 router.patch('/update-account-info/:id', UserController.updateAccountInfo);
 router.get('/get-account-email/:firebaseUID', UserController.getEmailByFirebaseUID);
+router.patch('/disable-account/:firebaseUID', UserController.disableAccount);
+router.patch('/enable-account/:firebaseUID', UserController.enableAccount);
 module.exports = router;

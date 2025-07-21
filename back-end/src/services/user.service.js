@@ -30,7 +30,11 @@ class UserService {
     ) => {
         let userRecord = null;
         let newUser = null;
-
+        // Kiểm tra số điện thoại đã tồn tại
+        const existedPhone = await User.findOne({ phoneNumber });
+        if (existedPhone) {
+            throw { message: 'Số điện thoại đã tồn tại. Vui lòng sử dụng số khác.', status: 400 };
+        }
         try {
             userRecord = await admin.auth().createUser({
                 email: email,
@@ -144,7 +148,7 @@ class UserService {
 
     };
 
-    getPaginatedUsers = async (page = 1, limit = 5, search = '', role = '') => {
+    getPaginatedUsers = async (page = 1, limit = 6, search = '', role = '') => {
         const skip = (page - 1) * limit;
         const query = {};
 
@@ -152,7 +156,7 @@ class UserService {
             query.$or = [
                 { fname: { $regex: search, $options: 'i' } },
                 { lname: { $regex: search, $options: 'i' } },
-                { phoneNumber: { $regex: search, $options: 'i' } }
+                { phoneNumber: { $regex: search, $options: 'i' } },
             ];
         }
 
@@ -161,41 +165,55 @@ class UserService {
         }
 
         const users = await User.find(query)
+            .populate('role', '_id name displayName')
             .skip(skip)
             .limit(Number(limit))
+            .select('firebaseUID fname lname phoneNumber gender dob role groupCustomerId') // Chỉ lấy các trường cần thiết
             .exec();
 
-        // Lấy email từ Firebase và gán lại vào users
-        const usersWithEmail = await Promise.all(users.map(async (user) => {
-            try {
-                const userRecord = await admin.auth().getUser(user.firebaseUID);
-                user.firebaseUID = userRecord.email;
-            } catch (error) {
-                console.error(`Error fetching email for user ${user.firebaseUID}:`, error);
-            }
-            return user;
-        }));
+        // Lấy thông tin Firebase cho nhiều người dùng
+        const firebaseUIDs = users.map((user) => ({ uid: user.firebaseUID }));
+        let firebaseUsers = [];
+        try {
+            const { users: firebaseUserRecords } = await admin.auth().getUsers(firebaseUIDs);
+            firebaseUsers = firebaseUserRecords;
+        } catch (error) {
+            console.error('Error fetching Firebase users:', error);
+        }
+
+        const usersWithFirebaseData = users.map((user) => {
+            const firebaseUser = firebaseUsers.find((fu) => fu.uid === user.firebaseUID);
+            return {
+                ...user.toObject(),
+                email: firebaseUser ? firebaseUser.email : null,
+                accountStatus: firebaseUser ? (firebaseUser.disabled ? 'Disabled' : 'Active') : 'Unknown',
+            };
+        });
 
         const totalRecords = await User.countDocuments(query);
         const totalPages = Math.ceil(totalRecords / limit);
 
         return {
-            data: usersWithEmail,
+            data: usersWithFirebaseData,
             meta: {
                 total: totalRecords,
                 totalPages,
                 currentPage: parseInt(page),
-                perPage: parseInt(limit)
-            }
+                perPage: parseInt(limit),
+            },
         };
-    }
+    };
     signUpAndVerify = async (
         fname, lname, dob, phoneNumber, email,
         gender, role, password, restaurant = null, restaurants = null
     ) => {
         let userRecord = null;
         let newUser = null;
-
+        // Kiểm tra số điện thoại đã tồn tại
+        const existedPhone = await User.findOne({ phoneNumber });
+        if (existedPhone) {
+            throw { message: 'Số điện thoại đã tồn tại. Vui lòng sử dụng số khác.', status: 400 };
+        }
         try {
             userRecord = await admin.auth().createUser({
                 email: email,
@@ -261,6 +279,28 @@ class UserService {
             console.error('Error fetching user data:', error);
             throw new Error('Không tìm thấy người dùng trong Firebase.');
         }
+    };
+    getEmailByPhoneNumber = async (phoneNumber) => {
+    const user = await User.findOne({ phoneNumber });
+    if (!user) throw { message: 'Không tìm thấy tài khoản với số điện thoại này.', status: 404 };
+    const userRecord = await admin.auth().getUser(user.firebaseUID);
+    return userRecord.email;
+};
+updateFirebaseAccountStatus = async (firebaseUID, disabled) => {
+        try {
+            await admin.auth().updateUser(firebaseUID, { disabled });
+            return { message: `Tài khoản đã được ${disabled ? 'vô hiệu hóa' : 'kích hoạt lại'}.` };
+        } catch (error) {
+            throw new Error(`Không thể cập nhật trạng thái tài khoản: ${error.message}`);
+        }
+    };
+
+    disableAccount = async (firebaseUID) => {
+        return this.updateFirebaseAccountStatus(firebaseUID, true);
+    };
+
+    enableAccount = async (firebaseUID) => {
+        return this.updateFirebaseAccountStatus(firebaseUID, false);
     };
 }
 

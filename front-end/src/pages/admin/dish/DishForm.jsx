@@ -29,8 +29,19 @@ import {
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 import { app } from "../../../firebase/firebase";
 import Pagination from "@mui/material/Pagination";
-const category = ["MAIN_COURSE", "DESSERT", "BEVERAGE", "SALAD", "APPETIZER"];
-const foodTag = ["SEASONAL", "HOT_SALE", "CHEF_SPECIAL"];
+
+const category = [
+  { value: "MAIN_COURSE", label: "Món chính" },
+  { value: "DESSERT", label: "Món tráng miệng" },
+  { value: "BEVERAGE", label: "Đồ uống" },
+  { value: "SALAD", label: "Salad rau trộn" },
+  { value: "APPETIZER", label: "Món khai vị" },
+];
+const foodTag = [
+  { value: "SEASONAL", label: "Món ăn theo mùa" },
+  { value: "HOT_SALE", label: "Bán chạy nhất" },
+  { value: "CHEF_SPECIAL", label: "Khẩu phần đặc biệt" },
+];
 
 const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
   const [formData, setFormData] = useState({
@@ -65,12 +76,12 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit(formData); // Submit the dish data with associated restaurants
-    onClose(); // Close the form after submission
+    onSubmit(formData);
+    onClose();
   };
 
   const { data: images } = useGetImagesByEntityIdQuery(dish?._id, {
-    skip: !dish, // Bỏ qua gọi API nếu dish là null
+    skip: !dish,
   });
   const [deleteImage] = useDeleteImageMutation();
   const [uploadImage] = useUploadImageMutation();
@@ -84,7 +95,6 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
         await uploadBytes(storageRef, file);
         const downloadURL = await getDownloadURL(storageRef);
 
-        // Upload new image data to backend
         await uploadImage({
           url: downloadURL,
           altText: formData.name,
@@ -99,10 +109,10 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
 
   const handleDeleteImage = async (imageId, imageText) => {
     try {
-      window.confirm(`Are you sure to delete image "${imageText}"?`);
+      window.confirm(`Bạn có chắc chắn muốn xóa ảnh "${imageText}"?`);
       await deleteImage(imageId).unwrap();
     } catch (error) {
-      console.error("Failed to delete image", error);
+      console.error("Xóa ảnh thất bại", error);
     }
   };
 
@@ -112,14 +122,6 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
   const rowsPerPage = 5;
   const [searchSelected, setSearchSelected] = useState("");
   const [searchAvailable, setSearchAvailable] = useState("");
-  // Dữ liệu phân trang
-  // const selectedRestaurants = formData.restaurants;
-  // const availableRestaurants = restaurants.filter(
-  //   (restaurant) =>
-  //     !formData.restaurants.some(
-  //       (r) => String(restaurant._id) === String(r._id)
-  //     )
-  // );
 
   const filteredSelectedRestaurants = formData.restaurants.filter((restaurant) =>
     restaurant.name.toLowerCase().includes(searchSelected.toLowerCase())
@@ -153,9 +155,9 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
 
       <form onSubmit={handleSubmit}>
         <DialogContent>
-          {/* Dish Name */}
+          {/* Tên món ăn */}
           <TextField
-            label="Name"
+            label="Tên món ăn"
             variant="outlined"
             fullWidth
             value={formData.name}
@@ -205,9 +207,9 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
             </>
           )}
 
-          {/* Price */}
+          {/* Giá món ăn */}
           <TextField
-            label="Price"
+            label="Giá (VNĐ)"
             variant="outlined"
             type="number"
             fullWidth
@@ -218,11 +220,11 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
             margin="normal"
           />
 
-          {/* Category */}
-          <Box sx={{ maxWidth: 150 }} margin="normal">
+          {/* Danh mục */}
+          <Box sx={{ maxWidth: 200 }} margin="normal">
             <FormControl fullWidth>
               <InputLabel variant="standard" htmlFor="category-select">
-                Category
+                Danh mục
               </InputLabel>
               <NativeSelect
                 id="category-select"
@@ -231,20 +233,21 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
                   setFormData({ ...formData, category: e.target.value })
                 }
               >
+                <option value="">Chọn danh mục</option>
                 {category.map((c) => (
-                  <option key={c} value={c}>
-                    {c}
+                  <option key={c.value} value={c.value}>
+                    {c.label}
                   </option>
                 ))}
               </NativeSelect>
             </FormControl>
           </Box>
 
-          {/* Food Tag */}
-          <Box sx={{ maxWidth: 150 }} margin="normal">
+          {/* Nhãn món ăn */}
+          <Box sx={{ maxWidth: 200 }} margin="normal">
             <FormControl fullWidth>
               <InputLabel variant="standard" htmlFor="foodTag-select">
-                Food Tag
+                Nhãn món ăn
               </InputLabel>
               <NativeSelect
                 id="foodTag-select"
@@ -253,18 +256,19 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
                   setFormData({ ...formData, foodTag: e.target.value })
                 }
               >
+                <option value="">Chọn nhãn</option>
                 {foodTag.map((f) => (
-                  <option key={f} value={f}>
-                    {f}
+                  <option key={f.value} value={f.value}>
+                    {f.label}
                   </option>
                 ))}
               </NativeSelect>
             </FormControl>
           </Box>
 
-          {/* Description */}
+          {/* Mô tả */}
           <TextField
-            label="Description"
+            label="Mô tả"
             variant="outlined"
             fullWidth
             multiline
@@ -275,6 +279,7 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
             }
             margin="normal"
           />
+
           <Typography variant="subtitle2" sx={{ mt: 2 }}>Tìm kiếm cửa hàng có món ăn:</Typography>
           <TextField
             size="small"
@@ -287,10 +292,10 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
             fullWidth
             sx={{ mb: 1 }}
           />
-          {/* Selected Restaurants */}
+          {/* Các cửa hàng có món ăn */}
           <TableContainer>
             <Table>
-              <TableHead  sx={{ backgroundColor: "#f5f5f5" }}>
+              <TableHead sx={{ backgroundColor: "#f5f5f5" }}>
                 <TableRow>
                   <TableCell>Các cửa hàng có món ăn</TableCell>
                   <TableCell>Hành động</TableCell>
@@ -334,10 +339,10 @@ const DishForm = ({ dish, onSubmit, onClose, restaurants }) => {
             fullWidth
             sx={{ mb: 1 }}
           />
-          {/* Available Restaurants */}
+          {/* Các cửa hàng chưa có món ăn */}
           <TableContainer>
             <Table>
-              <TableHead  sx={{ backgroundColor: "#f5f5f5" }}>
+              <TableHead sx={{ backgroundColor: "#f5f5f5" }}>
                 <TableRow>
                   <TableCell>Các cửa hàng chưa có món ăn</TableCell>
                   <TableCell>Hành động</TableCell>

@@ -16,6 +16,7 @@ import {
   ListItem,
   ListItemText,
   Divider,
+  Pagination
 } from "@mui/material";
 import { styled } from "@mui/system";
 import { FaChair, FaUserFriends, FaLocationArrow, FaClock } from "react-icons/fa";
@@ -77,6 +78,10 @@ const DiningTableStatus = () => {
   const [restaurant, setRestaurant] = useState('');
   const [restaurants, setRestaurants] = useState([]);
 
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const tablesPerPage = 9;
+
   useEffect(() => {
     const fetchRestaurants = async () => {
       const data = await RestaurantService.getAllRestaurants();
@@ -88,6 +93,10 @@ const DiningTableStatus = () => {
   useEffect(() => {
     fetchTables();
   }, [restaurant]);
+
+  useEffect(() => {
+    setCurrentPage(1); // Reset page when filter changes
+  }, [statusFilter, locationFilter, sortBy, restaurant]);
 
   const fetchTables = async () => {
     const data = await BookingService.getBookedTables();
@@ -122,6 +131,12 @@ const DiningTableStatus = () => {
       if (sortBy === "capacity") return a.table.capacity - b.table.capacity;
       return 0;
     });
+
+  const pageCount = Math.ceil(filteredAndSortedTables.length / tablesPerPage);
+  const paginatedTables = filteredAndSortedTables.slice(
+    (currentPage - 1) * tablesPerPage,
+    currentPage * tablesPerPage
+  );
 
   const getStatusColor = (status) => {
     switch (status) {
@@ -213,7 +228,7 @@ const DiningTableStatus = () => {
       </Box>
 
       <Grid container spacing={3}>
-        {filteredAndSortedTables.map((table) => (
+        {paginatedTables.map((table) => (
           <Grid item xs={12} sm={6} md={4} key={table.table._id}>
             <StyledCard
               status={table.status}
@@ -256,6 +271,19 @@ const DiningTableStatus = () => {
         ))}
       </Grid>
 
+      {/* Pagination */}
+      {pageCount > 1 && (
+        <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+          <Pagination
+            count={pageCount}
+            page={currentPage}
+            onChange={(_, value) => setCurrentPage(value)}
+            color="primary"
+            shape="rounded"
+          />
+        </Box>
+      )}
+
       <Modal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
@@ -275,7 +303,7 @@ const DiningTableStatus = () => {
           {selectedTable && (
             <>
               <Typography variant="h6" gutterBottom>
-                Table {selectedTable.table.tableNumber} Details
+                Thông tin bàn số {selectedTable.table.tableNumber}
               </Typography>
               
               {!showBookings ? (

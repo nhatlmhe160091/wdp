@@ -72,7 +72,22 @@ const UserService = {
         return handleApiCall(() =>
             api.get(`/user/get-account-email/${firebaseUID}`)
         )
-    }
+    },
+    getEmailByPhoneNumber: async (phoneNumber) => {
+        return handleApiCall(() =>
+            api.post("/user/get-email-by-phone", { phoneNumber })
+        )
+    },
+    enableAccount: async (firebaseUID) => {
+        return handleApiCall(() =>
+            api.patch(`/user/enable-account/${firebaseUID}`)
+        )
+    },
+    disableAccount: async (firebaseUID) => {
+        return handleApiCall(() =>
+            api.patch(`/user/disable-account/${firebaseUID}`)
+        )
+    },
 }
 
 export default UserService;

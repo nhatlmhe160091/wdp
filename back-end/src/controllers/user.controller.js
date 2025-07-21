@@ -192,6 +192,34 @@ class UserController {
             next(error);
         }
     }
+    getEmailByPhoneNumber = async (req, res, next) => {
+    try {
+        const { phoneNumber } = req.body;
+        const email = await UserService.getEmailByPhoneNumber(phoneNumber);
+        res.status(200).json({ email });
+    } catch (error) {
+        res.status(error.status || 500).json({ message: error.message });
+    }
+};
+ disableAccount = async (req, res, next) => {
+        try {
+            const { firebaseUID } = req.params;
+            const result = await UserService.disableAccount(firebaseUID);
+            res.status(200).json(result);
+        } catch (error) {
+            next(error);
+        }
+    };
+
+    enableAccount = async (req, res, next) => {
+        try {
+            const { firebaseUID } = req.params;
+            const result = await UserService.enableAccount(firebaseUID);
+            res.status(200).json(result);
+        } catch (error) {
+            next(error);
+        }
+    };
 }
 
 module.exports = new UserController;

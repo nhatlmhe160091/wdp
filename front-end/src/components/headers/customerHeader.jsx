@@ -161,7 +161,7 @@ function CustomerHeader() {
                                         variant="body1"
                                         underline="hover"
                                     >
-                                        Tài khoản : {user?.lname} {user?.fname}
+                                        Xin chào: {user?.lname} {user?.fname}
                                     </Link>
                                 </Box>
                             </Tooltip>

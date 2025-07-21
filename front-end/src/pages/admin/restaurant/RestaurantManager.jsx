@@ -60,24 +60,30 @@ const RestaurantManager = () => {
           id: selectedRestaurant._id,
           updatedRestaurant: formData,
         }).unwrap();
-        toast.success("Restaurant updated successfully!");
+        toast.success("Cập nhật nhà hàng thành công!");
       } else {
         await addRestaurant(formData).unwrap();
-        toast.success("Restaurant added successfully!");
+        toast.success("Nhà hàng mới đã được thêm thành công!");
       }
       setShowForm(false);
     } catch (error) {
-      toast.error("Failed to save restaurant.");
+      toast.error(
+        error?.data?.message || "Lỗi khi lưu nhà hàng. Vui lòng thử lại."
+      );
+      console.error("Error saving restaurant:", error);
     }
   };
 
   const handleDelete = async (id) => {
-    if (window.confirm("Are you sure you want to delete this restaurant?")) {
+    if (window.confirm("Bạn có chắc chắn muốn xóa nhà hàng này?")) {
       try {
         await deleteRestaurant(id).unwrap();
-        toast.success("Restaurant deleted successfully!");
+        toast.success("Nhà hàng đã được xóa thành công!");
       } catch (error) {
-        toast.error("Failed to delete restaurant.");
+        toast.error(
+          error?.data?.message || "Lỗi khi xóa nhà hàng. Vui lòng thử lại."
+        );
+        console.error("Error deleting restaurant:", error);
       }
     }
   };
@@ -94,8 +100,8 @@ const RestaurantManager = () => {
     dispatch(setSearchTerm(e.target.value));
   };
 
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error loading restaurants</div>;
+  if (isLoading) return <div>Đang tải nhà hàng...</div>;
+  if (error) return <div>Lỗi khi tải nhà hàng: {error.message}</div>;
 
   return (
     <>

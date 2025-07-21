@@ -121,7 +121,7 @@ const EditBookingModal = ({ open, onClose, bookingData,fetchBookings }) => {
           <Grid item xs={12}>
             <TextField
               select
-              label="Status"
+              label="Trạng thái"
               value={status}
               onChange={(e) => setStatus(e.target.value)}
               fullWidth
