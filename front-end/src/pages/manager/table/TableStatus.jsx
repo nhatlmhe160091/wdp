@@ -116,7 +116,7 @@ const DiningTableStatus = () => {
       setTables(tables.map(table =>
         table.bookingId === bookingId ? { ...table, status: newStatus } : table
       ));
-      alert('Updated status successfully');
+      alert('Câp nhật trạng thái thành công!');
       setModalOpen(false);
     } catch (error) {
       console.error('Failed to update status:', error);

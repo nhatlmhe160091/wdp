@@ -68,6 +68,10 @@ const bookingSchema = new Schema({
     leaveAt: {
         type: Date
     },
+    dishes: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Dish'
+    }],
 }, { timestamps: true });
 
 module.exports = mongoose.model('Booking', bookingSchema);

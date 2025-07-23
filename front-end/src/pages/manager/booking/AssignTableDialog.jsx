@@ -76,7 +76,7 @@ const AssignTableDialog = ({
         status: 'RESERVED'
       };
       await BookingService.updateReservation(bookingData?._id, reservationData);
-      alert('Update table for booking successfully!');
+      alert('Cập nhật bàn thành công!');
       // setSelectedTables([]);
       fetchBookings();
       onClose();

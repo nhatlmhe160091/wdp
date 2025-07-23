@@ -57,7 +57,9 @@ const MiniMap = ({ positions }) => {
     }, []);
 
     const allPositions = userLocation ? [userLocation, ...positions] : positions;
-
+if (!allPositions.length || !allPositions[0]) {
+    return <div>Không có vị trí để hiển thị bản đồ.</div>;
+}
     return (
         <MapContainer
             center={allPositions[0]}

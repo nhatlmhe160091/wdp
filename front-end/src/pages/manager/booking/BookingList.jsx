@@ -34,7 +34,7 @@ import SwapVertIcon from '@mui/icons-material/SwapVert';
 import RestaurantService from '../../../services/restaurantService';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { formatDate, formatTime } from '../../../utils/handleFormat';
-
+import DishBookingDialog from './DishBookingDialog';
 const statusMapping = {
   PENDING: 'Đang xử lí',
   CONFIRMED: 'Đã xác nhận',
@@ -258,7 +258,7 @@ const BookingList = () => {
             <TableRow sx={{ backgroundColor: '#f5f5f5' }}>
               <TableCell sx={{ fontWeight: 'bold', color: '#3f51b5' }}>Ngày đặt bàn</TableCell>
               <TableCell sx={{ fontWeight: 'bold', color: '#3f51b5' }}>
-                Thời gian đặt bàn
+                Thời gian
                 <IconButton onClick={handleSort}>
                   {/* {order === 'bookingTime' ? <ArrowUpwardIcon /> : <ArrowDownwardIcon />} */}
                   {order === 'bookingTime' ? <ArrowUpwardIcon /> : order === 'NotBookingTime' ? <ArrowDownwardIcon /> : <SwapVertIcon />}
@@ -270,6 +270,7 @@ const BookingList = () => {
               <TableCell sx={{ fontWeight: 'bold', color: '#3f51b5' }}>Trẻ em</TableCell>
               <TableCell sx={{ fontWeight: 'bold', color: '#3f51b5' }}>Trạng thái</TableCell>
               <TableCell sx={{ fontWeight: 'bold', color: '#3f51b5' }}>Bàn</TableCell>
+              <TableCell sx={{ fontWeight: 'bold', color: '#3f51b5' }}>Món</TableCell>
               <TableCell sx={{ fontWeight: 'bold', color: '#3f51b5' }}>Công cụ</TableCell>
             </TableRow>
           </TableHead>
@@ -294,6 +295,9 @@ const BookingList = () => {
                 <TableCell>
                   {booking?.reservation?.table.length > 0 ? <TableBookingDialog table={booking?.reservation?.table} /> : 'N/A'}
                 </TableCell>
+                <TableCell>
+  {booking?.dishes?.length > 0 ? <DishBookingDialog dishes={booking.dishes} /> : 'N/A'}
+</TableCell>
                 <TableCell>
                   <Box display="flex" alignItems="center">
                     <Tooltip title="Assign Table">

@@ -108,7 +108,8 @@ class BookingController {
                 note,
                 adultsCount,
                 childrenCount,
-                restaurantId
+                restaurantId,
+                dishes,
             } = req.body;
             const data = await BookingService.insertBooking(
                 bookingTime,
@@ -117,7 +118,9 @@ class BookingController {
                 note,
                 adultsCount,
                 childrenCount,
-                restaurantId);
+                restaurantId,
+                dishes
+            );
             res.status(200).json(data);
         } catch (error) {
             next(error);
@@ -264,17 +267,18 @@ class BookingController {
         }
     };
 
-    getDashboardStats = async (req, res, next) => {
-        try {
-            const stats = await BookingService.getDashboardStats();
-            res.status(200).json({
-                message: 'Dashboard statistics fetched successfully',
-                data: stats,
-            });
-        } catch (error) {
-            next(error);
-        }
+ getDashboardStats = async (req, res, next) => {
+    try {
+        const { date } = req.query; // Lấy ngày từ query nếu có
+        const stats = await BookingService.getDashboardStats(date);
+        res.status(200).json({
+            message: 'Dashboard statistics fetched successfully',
+            data: stats,
+        });
+    } catch (error) {
+        next(error);
     }
+}
 }
 
 module.exports = new BookingController;

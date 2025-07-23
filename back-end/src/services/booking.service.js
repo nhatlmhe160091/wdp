@@ -134,17 +134,24 @@ class BookingService {
             ? { "bookingTime": sort === 'bookingTime' ? 1 : -1 }
             : { bookingTime: -1 };
         const bookings = await Booking.find(query)
-            .populate('restaurant')
-            .populate('customer')
-            .populate('guest')
-            .populate({
-                path: 'reservation.table',
-                model: 'Table'
-            })
-            .skip(skip)
-            .limit(Number(limit))
-            .sort(sortOptions)
-            .lean();
+    .populate({
+        path: 'restaurant',
+        select: '_id name address'
+    })
+    .populate('customer')
+    .populate('guest')
+    .populate({
+        path: 'reservation.table',
+        model: 'Table'
+    })
+    .populate({
+        path: 'dishes',
+        select: '_id name price category'
+    })
+    .skip(skip)
+    .limit(Number(limit))
+    .sort(sortOptions)
+    .lean();
 
         const customerPromises = bookings.map(async (booking) => {
             if (booking.customer && booking.customer.firebaseUID) {
@@ -276,7 +283,7 @@ class BookingService {
     };
 
 
-    insertBooking = async (
+   insertBooking = async (
         bookingTime,
         customerId,
         guestId,
@@ -284,6 +291,7 @@ class BookingService {
         adultsCount = 1,
         childrenCount = 0,
         restaurantId,
+        dishes = [] // Thêm tham số này
     ) => {
         if (!customerId && !guestId) {
             throw new Error('Lỗi không xác định được người đặt bàn');
@@ -292,7 +300,7 @@ class BookingService {
         if (bookingTime <= Date.now()) {
             throw new Error('Thời gian đặt bàn phải ở tương lai.');
         }
-        const restaurant = Restaurant.findById(restaurantId);
+        const restaurant = await Restaurant.findById(restaurantId);
         if (!restaurant) {
             throw new Error('Không tìm thấy nhà hàng hợp lệ')
         }
@@ -304,7 +312,8 @@ class BookingService {
             note,
             adultsCount,
             childrenCount,
-            restaurant: restaurantId
+            restaurant: restaurantId,
+            dishes // Lưu danh sách món ăn
         })
         const data = await newBooking.save();
         return {
@@ -451,101 +460,136 @@ class BookingService {
 
         return booking;
     };
-    getDashboardStats = async () => {
-        // Tổng số booking
-        const totalBookings = await Booking.countDocuments();
+ 
+getDashboardStats = async (date) => {
+    // Xác định ngày cần filter, mặc định là hôm nay nếu không truyền
+    let filterDate = date ? new Date(date) : new Date();
+    filterDate.setHours(0, 0, 0, 0);
+    const nextDate = new Date(filterDate);
+    nextDate.setDate(filterDate.getDate() + 1);
 
-        // Số booking theo trạng thái
-        const bookingStatusStats = await Booking.aggregate([
-            { $group: { _id: "$status", count: { $sum: 1 } } }
-        ]);
+    // Lấy tất cả booking trong ngày
+    const todayBookings = await Booking.find({
+        bookingTime: { $gte: filterDate, $lt: nextDate }
+    }).populate('reservation.table');
 
-        // Tổng số bàn đã đặt thành công (TABLE_ASSIGNED hoặc COMPLETED)
-        const bookedTableStats = await Booking.aggregate([
-            { $match: { status: { $in: ["TABLE_ASSIGNED", "COMPLETED"] } } },
-            { $unwind: "$reservation.table" },
-            { $group: { _id: null, count: { $sum: 1 } } }
-        ]);
-        const totalBookedTables = bookedTableStats[0]?.count || 0;
+    // Tổng số bàn được đặt hôm nay
+    const todayBookedTables = todayBookings.reduce((acc, booking) => {
+        if (booking.reservation && booking.reservation.table) {
+            acc += booking.reservation.table.length;
+        }
+        return acc;
+    }, 0);
 
-        // Tổng số bàn đã hủy (CANCELLED)
-        const cancelledTableStats = await Booking.aggregate([
-            { $match: { status: "CANCELLED" } },
-            { $unwind: "$reservation.table" },
-            { $group: { _id: null, count: { $sum: 1 } } }
-        ]);
-        const totalCancelledTables = cancelledTableStats[0]?.count || 0;
+    // Đếm số lần mỗi bàn được đặt hôm nay
+    const tableCountMap = {};
+    todayBookings.forEach(booking => {
+        if (booking.reservation && booking.reservation.table) {
+            booking.reservation.table.forEach(table => {
+                const tableId = table._id.toString();
+                tableCountMap[tableId] = (tableCountMap[tableId] || 0) + 1;
+            });
+        }
+    });
 
-        // Tổng số khách (user + guest)
-        const totalUsers = await User.countDocuments();
-        const totalGuests = await Guest.countDocuments();
-        const totalCustomers = totalUsers + totalGuests;
+    // Lấy thông tin chi tiết các bàn
+    const allTableIds = Object.keys(tableCountMap);
+    const tables = await Table.find({ _id: { $in: allTableIds } });
 
-        // Tổng số nhà hàng
-        const totalRestaurants = await Restaurant.countDocuments();
+    // Danh sách bàn đặt nhiều nhất và ít nhất hôm nay
+    let mostBookedTable = null, leastBookedTable = null;
+    if (tables.length > 0) {
+        const sorted = tables
+            .map(table => ({
+                table,
+                count: tableCountMap[table._id.toString()] || 0
+            }))
+            .sort((a, b) => b.count - a.count);
 
-        // Tổng số bàn
-        const totalTables = await Table.countDocuments();
-
-        // Thống kê booking theo tháng (12 tháng gần nhất)
-        const bookingsByMonth = await Booking.aggregate([
-            {
-                $group: {
-                    _id: { $dateToString: { format: "%Y-%m", date: "$bookingTime" } },
-                    count: { $sum: 1 }
-                }
-            },
-            { $sort: { "_id": 1 } }
-        ]);
-
-        // Top 5 khách hàng tiềm năng (nhiều booking nhất)
-        const topCustomers = await Booking.aggregate([
-            { $match: { customer: { $ne: null } } },
-            { $group: { _id: "$customer", count: { $sum: 1 } } },
-            { $sort: { count: -1 } },
-            { $limit: 5 },
-            {
-                $lookup: {
-                    from: "users",
-                    localField: "_id",
-                    foreignField: "_id",
-                    as: "customer"
-                }
-            },
-            { $unwind: "$customer" },
-            { $project: { _id: 0, customer: 1, count: 1 } }
-        ]);
-
-        // Top 5 nhà hàng tiềm năng (nhiều booking nhất)
-        const topRestaurants = await Booking.aggregate([
-            { $group: { _id: "$restaurant", count: { $sum: 1 } } },
-            { $sort: { count: -1 } },
-            { $limit: 5 },
-            {
-                $lookup: {
-                    from: "restaurants",
-                    localField: "_id",
-                    foreignField: "_id",
-                    as: "restaurant"
-                }
-            },
-            { $unwind: "$restaurant" },
-            { $project: { _id: 0, restaurant: 1, count: 1 } }
-        ]);
-
-        return {
-            totalBookings,
-            bookingStatusStats,
-            totalBookedTables,
-            totalCancelledTables,
-            totalCustomers,
-            totalRestaurants,
-            totalTables,
-            bookingsByMonth,
-            topCustomers,
-            topRestaurants
-        };
+        mostBookedTable = sorted[0];
+        leastBookedTable = sorted[sorted.length - 1];
     }
+
+    // Các thống kê khác giữ nguyên
+    const totalBookings = await Booking.countDocuments();
+    const bookingStatusStats = await Booking.aggregate([
+        { $group: { _id: "$status", count: { $sum: 1 } } }
+    ]);
+    const bookedTableStats = await Booking.aggregate([
+        { $match: { status: { $in: ["TABLE_ASSIGNED", "COMPLETED"] } } },
+        { $unwind: "$reservation.table" },
+        { $group: { _id: null, count: { $sum: 1 } } }
+    ]);
+    const totalBookedTables = bookedTableStats[0]?.count || 0;
+    const cancelledTableStats = await Booking.aggregate([
+        { $match: { status: "CANCELLED" } },
+        { $unwind: "$reservation.table" },
+        { $group: { _id: null, count: { $sum: 1 } } }
+    ]);
+    const totalCancelledTables = cancelledTableStats[0]?.count || 0;
+    const totalUsers = await User.countDocuments();
+    const totalGuests = await Guest.countDocuments();
+    const totalCustomers = totalUsers + totalGuests;
+    const totalRestaurants = await Restaurant.countDocuments();
+    const totalTables = await Table.countDocuments();
+    const bookingsByMonth = await Booking.aggregate([
+        {
+            $group: {
+                _id: { $dateToString: { format: "%Y-%m", date: "$bookingTime" } },
+                count: { $sum: 1 }
+            }
+        },
+        { $sort: { "_id": 1 } }
+    ]);
+    const topCustomers = await Booking.aggregate([
+        { $match: { customer: { $ne: null } } },
+        { $group: { _id: "$customer", count: { $sum: 1 } } },
+        { $sort: { count: -1 } },
+        { $limit: 5 },
+        {
+            $lookup: {
+                from: "users",
+                localField: "_id",
+                foreignField: "_id",
+                as: "customer"
+            }
+        },
+        { $unwind: "$customer" },
+        { $project: { _id: 0, customer: 1, count: 1 } }
+    ]);
+    const topRestaurants = await Booking.aggregate([
+        { $group: { _id: "$restaurant", count: { $sum: 1 } } },
+        { $sort: { count: -1 } },
+        { $limit: 5 },
+        {
+            $lookup: {
+                from: "restaurants",
+                localField: "_id",
+                foreignField: "_id",
+                as: "restaurant"
+            }
+        },
+        { $unwind: "$restaurant" },
+        { $project: { _id: 0, restaurant: 1, count: 1 } }
+    ]);
+
+    return {
+        totalBookings,
+        bookingStatusStats,
+        totalBookedTables,
+        totalCancelledTables,
+        totalCustomers,
+        totalRestaurants,
+        totalTables,
+        bookingsByMonth,
+        topCustomers,
+        topRestaurants,
+        todayBookedTables,
+        mostBookedTable, // { table, count }
+        leastBookedTable // { table, count }
+    };
+}
+
 }
 
 module.exports = new BookingService;

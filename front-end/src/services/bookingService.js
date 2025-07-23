@@ -75,7 +75,8 @@ const BookingService = {
             note,
             adultsCount,
             childrenCount,
-            restaurantId
+            restaurantId,
+            dishes
         } = filter;
         return handleApiCall(() =>
             api.post('/booking/insert-booking', {
@@ -85,7 +86,8 @@ const BookingService = {
                 note,
                 adultsCount,
                 childrenCount,
-                restaurantId
+                restaurantId,
+                dishes
             })
         );
     },
@@ -127,9 +129,13 @@ const BookingService = {
             api.patch(`/booking/update-reservation-status/${bookingId}`, { status })
         );
     },
-    getDashboardStats: async () => {
-        return handleApiCall(() => api.get("/booking/dashboard"));
-    }
+   getDashboardStats: async (date) => {
+    return handleApiCall(() =>
+        api.get("/booking/dashboard", {
+            params: { date }
+        })
+    );
+}
 }
 
 export default BookingService;

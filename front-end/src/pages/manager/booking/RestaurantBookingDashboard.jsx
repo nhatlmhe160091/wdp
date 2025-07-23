@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, Container, Grid, Card, CardContent, Typography, IconButton, ThemeProvider, createTheme, CssBaseline, CircularProgress } from "@mui/material";
+import { Box, Container, Grid, Card, CardContent, Typography, IconButton, ThemeProvider, createTheme, CssBaseline, CircularProgress, TextField } from "@mui/material";
 import { styled } from "@mui/system";
 import { FaUsers, FaUtensils, FaChair, FaBookmark } from "react-icons/fa";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
@@ -40,6 +40,7 @@ const RestaurantBookingDashboard = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [dashboard, setDashboard] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [dateFilter, setDateFilter] = useState('');
 
   const theme = createTheme({
     palette: {
@@ -50,14 +51,17 @@ const RestaurantBookingDashboard = () => {
     }
   });
 
-  useEffect(() => {
+  const fetchDashboard = async (date) => {
     setLoading(true);
-    BookingService.getDashboardStats()
-      .then(res => {
-        setDashboard(res.data);
-      })
-      .finally(() => setLoading(false));
-  }, []);
+    const res = await BookingService.getDashboardStats(date);
+    setDashboard(res.data);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchDashboard(dateFilter);
+    // eslint-disable-next-line
+  }, [dateFilter]);
 
   // Xử lý dữ liệu cho biểu đồ
   const bookingData = dashboard?.bookingsByMonth?.map(item => ({
@@ -94,11 +98,22 @@ const RestaurantBookingDashboard = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="xl" sx={{ py: 4 }}>
-        <Box display="flex" justifyContent="space-between" mb={4}>
+        <Box display="flex" justifyContent="space-between" mb={4} alignItems="center">
           <Typography variant="h4" component="h1">Bảng điều khiển đặt bàn nhà hàng</Typography>
-          <IconButton onClick={() => setDarkMode(!darkMode)}>
-            {darkMode ? <MdLightMode /> : <MdDarkMode />}
-          </IconButton>
+          <Box display="flex" alignItems="center" gap={2}>
+            <TextField
+              label="Lọc theo ngày"
+              type="date"
+              size="small"
+              value={dateFilter}
+              onChange={e => setDateFilter(e.target.value)}
+              InputLabelProps={{ shrink: true }}
+              sx={{ bgcolor: "#fff", borderRadius: 1 }}
+            />
+            <IconButton onClick={() => setDarkMode(!darkMode)}>
+              {darkMode ? <MdLightMode /> : <MdDarkMode />}
+            </IconButton>
+          </Box>
         </Box>
         {loading ? (
           <Box display="flex" justifyContent="center" alignItems="center" minHeight="60vh">
@@ -117,6 +132,50 @@ const RestaurantBookingDashboard = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
               <DashboardCard title="Tổng số bàn" value={dashboard?.totalTables} icon={FaChair} color="#F44336" />
+            </Grid>
+
+            {/* Thống kê hôm nay */}
+            <Grid item xs={12} sm={6} md={4}>
+              <StyledCard>
+                <CardContent>
+                  <Typography variant="h6" color="textSecondary">Số bàn được đặt hôm nay</Typography>
+                  <Typography variant="h4">{dashboard?.todayBookedTables || 0}</Typography>
+                </CardContent>
+              </StyledCard>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <StyledCard>
+                <CardContent>
+                  <Typography variant="h6" color="textSecondary">Bàn đặt nhiều nhất hôm nay</Typography>
+                  {dashboard?.mostBookedTable?.table ? (
+                    <>
+                      <Typography variant="h5" fontWeight="bold">
+                        Bàn số {dashboard.mostBookedTable.table.tableNumber}
+                      </Typography>
+                      <Typography>Số lượt đặt: {dashboard.mostBookedTable.count}</Typography>
+                    </>
+                  ) : (
+                    <Typography>Không có dữ liệu</Typography>
+                  )}
+                </CardContent>
+              </StyledCard>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <StyledCard>
+                <CardContent>
+                  <Typography variant="h6" color="textSecondary">Bàn đặt ít nhất hôm nay</Typography>
+                  {dashboard?.leastBookedTable?.table ? (
+                    <>
+                      <Typography variant="h5" fontWeight="bold">
+                        Bàn số {dashboard.leastBookedTable.table.tableNumber}
+                      </Typography>
+                      <Typography>Số lượt đặt: {dashboard.leastBookedTable.count}</Typography>
+                    </>
+                  ) : (
+                    <Typography>Không có dữ liệu</Typography>
+                  )}
+                </CardContent>
+              </StyledCard>
             </Grid>
 
             <Grid item xs={12} md={8}>
